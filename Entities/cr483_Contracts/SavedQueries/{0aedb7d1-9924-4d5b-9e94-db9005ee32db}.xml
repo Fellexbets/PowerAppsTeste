@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{0aedb7d1-9924-4d5b-9e94-db9005ee32db}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr483_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr483_contractsid">
+          <cell name="cr483_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>0</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr483_contracts">
+          <attribute name="cr483_contractsid" />
+          <attribute name="cr483_name" />
+          <attribute name="createdon" />
+          <order attribute="cr483_name" descending="false" />
+          <filter type="and">
+            <condition attribute="statecode" operator="eq" value="0" />
+          </filter>
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Entidades Contracts Ativas" languagecode="2070" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

@@ -11,6 +11,7 @@
   <NavigationType>0</NavigationType>
   <AppModuleComponents>
     <AppModuleComponent type="1" schemaName="account" />
+    <AppModuleComponent type="1" schemaName="appaction" />
     <AppModuleComponent type="62" schemaName="cr483_FELLEXAPP" />
   </AppModuleComponents>
   <AppModuleRoleMaps>

@@ -8,7 +8,7 @@
     <Descriptions>
       <Description description="Atualização do Volunteer Request" languagecode="2070" />
     </Descriptions>
-    <Version>1.1.0.1</Version>
+    <Version>1.1.0.3</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Cr3cc12</UniqueName>
@@ -80,13 +80,23 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="cr483_contracts" behavior="0" />
       <RootComponent type="1" schemaName="msdyn_iotdevicecategory" behavior="2" />
+      <RootComponent type="62" schemaName="cr483_FELLEXAPP" behavior="0" />
       <RootComponent type="62" schemaName="cr483_ragaga" behavior="0" />
       <RootComponent type="80" schemaName="cr483_FELLEXAPP" behavior="0" />
       <RootComponent type="80" schemaName="cr483_ProspectEntry" behavior="0" />
       <RootComponent type="80" schemaName="cr483_ragaga" behavior="0" />
     </RootComponents>
     <MissingDependencies>
+      <MissingDependency>
+        <Required type="1" schemaName="appaction" displayName="Ação da Aplicação" solution="msdyn_PowerAppsActions (9.1.0.29)" />
+        <Dependent type="62" schemaName="cr483_FELLEXAPP" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="1" schemaName="appaction" displayName="Ação da Aplicação" solution="msdyn_PowerAppsActions (9.1.0.29)" />
+        <Dependent type="80" schemaName="cr483_FELLEXAPP" displayName="FELLEX APP" />
+      </MissingDependency>
       <MissingDependency>
         <Required type="1" schemaName="cr483_prospects" displayName="Prospects" solution="Active" />
         <Dependent type="80" schemaName="cr483_ProspectEntry" displayName="Prospect Entry" />
@@ -108,10 +118,6 @@
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="cr483_ragaga" displayName="ragaga" />
-      </MissingDependency>
-      <MissingDependency>
-        <Required type="62" schemaName="cr483_FELLEXAPP" solution="Active" />
-        <Dependent type="80" schemaName="cr483_FELLEXAPP" displayName="FELLEX APP" />
       </MissingDependency>
       <MissingDependency>
         <Required type="62" schemaName="cr483_ProspectEntry" solution="Active" />
